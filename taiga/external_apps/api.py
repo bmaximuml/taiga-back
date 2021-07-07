@@ -13,8 +13,8 @@ from . import services
 
 from taiga.base import response
 from taiga.base import exceptions as exc
-from taiga.base.api import ModelCrudViewSet, ModelRetrieveViewSet
 from taiga.base.api.utils import get_object_or_404
+from taiga.base.api.viewsets import ModelCrudViewSet, ModelRetrieveViewSet
 from taiga.base.decorators import list_route, detail_route
 
 from django.utils.translation import ugettext_lazy as _

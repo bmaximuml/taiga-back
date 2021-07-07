@@ -13,9 +13,9 @@ from taiga.base import filters
 from taiga.base import exceptions as exc
 from taiga.base import response
 from taiga.base.decorators import detail_route, list_route
-from taiga.base.api import ModelCrudViewSet, ModelListViewSet
 from taiga.base.api.mixins import BlockedByProjectMixin
 from taiga.base.api.utils import get_object_or_error
+from taiga.base.api.viewsets import ModelCrudViewSet, ModelListViewSet
 
 from taiga.projects.history.mixins import HistoryResourceMixin
 from taiga.projects.milestones.models import Milestone

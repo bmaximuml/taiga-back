@@ -9,5 +9,7 @@ from taiga.base.api.permissions import TaigaResourcePermission, AllowAny
 
 
 class AuthPermission(TaigaResourcePermission):
-    create_perms = AllowAny()
+    get_token_perms = AllowAny()
+    refresh_token_perms = AllowAny()
+    verify_token_perms = AllowAny()
     register_perms = AllowAny()

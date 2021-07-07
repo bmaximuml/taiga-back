@@ -10,10 +10,9 @@ from django.utils.translation import ugettext as _
 from taiga.base import exceptions as exc
 from taiga.base import filters
 from taiga.base import response
-from taiga.base.api import ModelCrudViewSet
-from taiga.base.api import ModelListViewSet
 from taiga.base.api.mixins import BlockedByProjectMixin
 from taiga.base.api.utils import get_object_or_404
+from taiga.base.api.viewsets import ModelCrudViewSet, ModelListViewSet
 from taiga.base.decorators import list_route
 
 from taiga.mdrender.service import render as mdrender

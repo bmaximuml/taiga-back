@@ -11,7 +11,7 @@ from django.utils import timezone
 
 from taiga.base import response
 from taiga.base.decorators import detail_route
-from taiga.base.api import ReadOnlyListViewSet
+from taiga.base.api.viewsets import ReadOnlyListViewSet
 from taiga.mdrender.service import render as mdrender
 from taiga.projects.notifications import services as notifications_services
 from taiga.projects.notifications.apps import signal_mentions

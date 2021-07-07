@@ -7,8 +7,8 @@
 
 from django.utils.translation import ugettext as _
 
-from taiga.base.api import ModelCrudViewSet
 from taiga.base import exceptions as exc
+from taiga.base.api.viewsets import ModelCrudViewSet
 
 from . import models
 from . import filters

@@ -8,7 +8,7 @@
 from django.db.models import Q
 
 from taiga.base import response
-from taiga.base.api import ModelCrudViewSet, ReadOnlyListViewSet
+from taiga.base.api.viewsets import ModelCrudViewSet, ReadOnlyListViewSet
 
 from taiga.projects.settings.choices import HOMEPAGE_CHOICES
 from taiga.projects.models import Project

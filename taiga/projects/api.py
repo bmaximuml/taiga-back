@@ -20,11 +20,10 @@ from django_pglocks import advisory_lock
 from taiga.base import filters
 from taiga.base import exceptions as exc
 from taiga.base import response
-from taiga.base.api import ModelCrudViewSet, ModelListViewSet, ModelUpdateRetrieveViewSet
 from taiga.base.api.mixins import BlockedByProjectMixin, BlockeableSaveMixin, BlockeableDeleteMixin
 from taiga.base.api.permissions import AllowAnyPermission
 from taiga.base.api.utils import get_object_or_error
-from taiga.base.api.viewsets import ViewSet
+from taiga.base.api.viewsets import  ModelCrudViewSet, ModelListViewSet, ModelUpdateRetrieveViewSet, ViewSet
 from taiga.base.decorators import list_route
 from taiga.base.decorators import detail_route
 from taiga.base.utils.slug import slugify_uniquely

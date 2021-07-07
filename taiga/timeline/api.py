@@ -11,7 +11,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.db.models import Q
 
 from taiga.base import response
-from taiga.base.api import ReadOnlyListViewSet
+from taiga.base.api.viewsets import ReadOnlyListViewSet
 
 from . import serializers
 from . import service

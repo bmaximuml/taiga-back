@@ -5,9 +5,8 @@
 #
 # Copyright (c) 2021-present Kaleidos Ventures SL
 
-from taiga.base.api import ModelCrudViewSet
-from taiga.base.api import ModelUpdateRetrieveViewSet
 from taiga.base.api.mixins import BlockedByProjectMixin
+from taiga.base.api.viewsets import ModelCrudViewSet, ModelUpdateRetrieveViewSet
 from taiga.base import filters
 
 from taiga.projects.mixins.ordering import BulkUpdateOrderMixin

@@ -9,8 +9,7 @@ from django.db.models import Q
 from django.utils import timezone
 
 from taiga.base import response
-from taiga.base.api import ModelCrudViewSet
-from taiga.base.api import GenericViewSet
+from taiga.base.api.viewsets import GenericViewSet, ModelCrudViewSet
 from taiga.base.api.utils import get_object_or_error
 
 from taiga.projects.notifications.choices import NotifyLevel
